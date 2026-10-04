@@ -138,7 +138,7 @@
                     </div>
 
                     <label class="form-label">Любимый язык программирования:</label>
-                    <select name="languages[]" class="form-select mb-3" multiple="multiple" required>
+                    <select name="languages[]" class="form-select mb-3" size="6" multiple="multiple" required>
                         <option value="Pascal">Pascal</option>
                         <option value="C">C</option>
                         <option value="C++">C++</option>
@@ -168,13 +168,14 @@
     </main>
 
     <footer class="bg-secondary text-dark py-4">
-        <div class="container-fluid">
-            <div class="d-flex">
-                <p class="m-0">(C) ProMij20006</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-left">
+                <p class="m-0">©ProMij20006</p>
             </div>
         </div>
-    </footer>
-
+    </div>
+</footer>
     <script>
         const today = new Date().toISOString().split('T')[0];
         document.getElementById('datePicker123').max = today;
