@@ -8,32 +8,26 @@
     <title>Задание 4</title>
 </head>
 <body>
-    <header class="bg-secondary text-dark py-3 px-3">
-        <div class="conatiner-fluid">
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-                <div class="d-flex align-items-center gap-3 w-100 w-md-auto justify-content-between justify-content-md-start">
-                    <div class="d-flex justify-content-center align-items-center bg-success text-white fw-bold rounded">
-                        <img src="image.png" class="logo" alt="logo" style="width: 45px; height: 45px;">
-                    </div>
-                    <h1 class="m-0 fw-bold">Задание 4</h1>
-                </div>
-                <nav class="d-flex flex-column flex-md-row justify-content-md-end w-100 gap-2">
-                    <a href="#links" class="btn btn-light text-dark border">Ссылки</a>
-                    <a href="#table" class="btn btn-light text-dark border">Таблица</a>
-                    <a href="#form" class="btn btn-light text-dark border">Форма</a>
-                </nav>
-            </div>
+    <header>
+        <div class="header-content">
+            <img src="image.png" class="logo" alt="logo">
+            <h1>Задание 3</h1>
         </div>
+        <nav>
+            <a href="#links">Ссылки</a>
+            <a href="#table">Таблица</a>
+            <a href="#form">Форма</a>
+        </nav>
     </header>
 
-    <main class="py-3">
-        <div class="container-fluid d-flex flex-column align-items-center">
+    <main>
+        <div class="content-flex-container">
             
-            <div class="d-flex flex-column align-items-center order-2 order-md-1">
-                <ul id="links" class="mw-100">
+            <div class="block-links">
+                <ul id="links">
                     <li><a href="http://kubsu.ru">Главная КубГУ (HTTP)</a></li>
                     <li><a href="https://kubsu.ru">Главная КубГУ (HTTPS)</a></li>
-                    <li><a href="https://kubsu.ru"><img src="flower.jpg" class="img-fluid" alt="Цветок"></a></li>
+                    <li><a href="https://kubsu.ru"><img src="flower.jpg" alt="Цветок" width="600"></a></li>
                     <li><a href="inside.html">Сокращенная ссылка на внутреннюю страницу</a></li>
                     <li><a href="index.html">Сокращенная ссылка на главную страницу</a></li>
                     <li><a href="#bottom">Ссылка на фрагмент текущей страницы (на нижнюю часть)</a></li>
@@ -47,7 +41,7 @@
                     <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D0%B1%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82#История">Ссылка на фрагмент сайта</a></li>
                     <li>
                         <p>Ссылки из прямоугольных и круглых областей картинки</p>
-                        <img src="rectangle-and-circle.png" usemap="#image-map" class="img-fluid" alt="Карта-изображение">
+                        <img src="rectangle-and-circle.png" usemap="#image-map" alt="Карта-изображение">
                         <map name="image-map">
                             <area alt="" href="https://kubsu.ru/" coords="16,14,281,164" shape="rect">
                             <area alt="" href="https://kubsu.ru/ru/node/46616" coords="404,91,78" shape="circle">
@@ -66,50 +60,49 @@
                     <li><a href="ftp://ftp.myserver.com/document.docx">Ссылка на файл на сервере FTP с авторизацией</a></li>
                 </ul>
             </div>
-            <div class="order-1 order-md-2 w-100">
-                <div class="table-responsive">
-                    <table id="table" class="table">
-                        <tbody>
-                            <tr class="odd">
-                                <th>День</th>
-                                <th>1 пара</th>
-                                <th>2 пара</th>
-                                <th>3 пара</th>
-                            </tr>
-                            <tr class="even">
-                                <td>Понедельник</td>
-                                <td>Высшая математика</td>
-                                <td>Программирование</td>
-                                <td>Дискретная математика</td>
-                            </tr>
-                            <tr class="odd">
-                                <td>Вторник</td>
-                                <td colspan="3">День самостоятельной работы (практика дома)</td>
-                            </tr>
-                            <tr class="even">
-                                <td>Среда</td>
-                                <td>Веб-разработка</td>
-                                <td>Веб-разработка</td>
-                                <td>Английский язык</td>
-                            </tr>
-                            <tr class="odd">
-                                <td>Четверг</td>
-                                <td>Командный проект по разработке</td>
-                                <td>Физическая культура</td>
-                                <td>Электив</td>
-                            </tr>
-                            <tr class="even">
-                                <td>Пятница</td>
-                                <td>Высшая математика</td>
-                                <td>Базы данных</td>
-                                <td>Базы данных</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        
+            <div class="block-table">
+                <table id="table">
+                    <tbody>
+                        <tr class="odd">
+                            <th>День</th>
+                            <th>1 пара</th>
+                            <th>2 пара</th>
+                            <th>3 пара</th>
+                        </tr>
+                        <tr class="even">
+                            <td>Понедельник</td>
+                            <td>Высшая математика</td>
+                            <td>Программирование</td>
+                            <td>Дискретная математика</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Вторник</td>
+                            <td colspan="3">День самостоятельной работы (практика дома)</td>
+                        </tr>
+                        <tr class="even">
+                            <td>Среда</td>
+                            <td>Веб-разработка</td>
+                            <td>Веб-разработка</td>
+                            <td>Английский язык</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Четверг</td>
+                            <td>Командный проект по разработке</td>
+                            <td>Физическая культура</td>
+                            <td>Электив</td>
+                        </tr>
+                        <tr class="even">
+                            <td>Пятница</td>
+                            <td>Высшая математика</td>
+                            <td>Базы данных</td>
+                            <td>Базы данных</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         
-            <div class="order-3 text-center">
+            <div class="block-form">
                 <form action="/" method="POST" id="form">
                     <label>
                         ФИО:<br>
@@ -169,14 +162,9 @@
         </div>
     </main>
 
-    <footer class="bg-secondary text-dark py-4">
-        <div class="container-fluid">
-            <div class="d-flex">
-                <p class="m-0">(C) ProMij20006</p>
-            </div>
-        </div>
+    <footer>
+        <p class="author">(C) ProMij20006</p>
     </footer>
-
     <script>
         const today = new Date().toISOString().split('T')[0];
         document.getElementById('datePicker123').max = today;
